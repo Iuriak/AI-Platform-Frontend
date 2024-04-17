@@ -11,13 +11,13 @@
           width="512"
           height="512"
         >
-          <source src="~/assets/vid/person.mp4" type="video/mp4">
+          <source src="/assets/vid/person.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
   
       <div>
-        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
+        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-blue-700">
           AI智慧识别平台
         </h1>
         <p class="text-lg mt-4 text-slate-600 max-w-xl">

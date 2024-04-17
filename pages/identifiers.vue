@@ -14,7 +14,7 @@ const functions = [
     ],
     button: {
       text: "Get Started",
-      link: "/",
+      link: "/facial-recognition",
     },
   },
   {
@@ -27,7 +27,7 @@ const functions = [
     ],
     button: {
       text: "Get Started",
-      link: "/",
+      link: "/object-detection",
     },
   },
   {
@@ -40,7 +40,7 @@ const functions = [
     ],
     button: {
       text: "Get Started",
-      link: "/",
+      link: "/audio-recognition",
     },
   },
 ];

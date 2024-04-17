@@ -15,10 +15,10 @@ defineProps(["func"]);
       <ul class="grid mt-8 text-left gap-y-4">
         <li
           v-for="item of func.features"
-          class="flex items-start gap-3 text-gray-800"
+          class="flex items-start gap-3 text-sky-600"
         >
           <LandingTick className="w-6 h-6" />
-          <span>{{ item }}</span>
+          <span class="text-xl">{{ item }}</span>
         </li>
       </ul>
       <div class="flex mt-8">
