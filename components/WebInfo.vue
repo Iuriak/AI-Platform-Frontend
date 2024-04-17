@@ -18,8 +18,4 @@ const team = ref(CurtainWeb[0])
     <img class="m-2 w-8 h-8" :src="team.avatar.src" />
     <span class="truncate text-gray-900 dark:text-white font-semibold text-lg">{{ team.label }}</span>
   </div>
-  <!--
-    <UAvatar :src="team.avatar.src" size="md" />
-    
-    -->
-  </template>
+</template>
