@@ -1,16 +1,16 @@
-<!--人脸检测与属性分析模块-->
+<!--人脸验证与检索模块-->
 <script setup>
 definePageMeta({
   layout: 'facial',
-  title: 'Facial Authentication',
+  title: 'Facial Effect',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="人脸检测与属性分析">
+        <UDashboardNavbar title="人脸水印照对比">
         </UDashboardNavbar>
-        <FacialUploadBoard_attr></FacialUploadBoard_attr>
+        <FacialUploadBoard_watersmi></FacialUploadBoard_watersmi>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

@@ -10,36 +10,44 @@ const links = [
     text: '首页',
   }
 },{
-  id: 'Object-Recognition',
-  label: '图像识别模块',
+  id: 'Audio-Recognition',
+  label: '动作捕捉模块',
   icon: 'i-heroicons-home',
-  to: '/object-detection',
+  to: '/action-recognition',
   tooltip: {
-    text: '图像识别模块',
+    text: '动作捕捉模块',
   }
 }, {
-  id: 'Iden-bg',
-  label: '场景识别',
+  id: 'action-handaction',
+  label: '手部动作捕捉',
   icon: 'i-heroicons-face-smile',
-  to: '/iden-bg',
+  to: '/action-handaction',
   tooltip: {
-    text: '场景识别',
+    text: '手部动作捕捉',
   }
 },{
-  id: 'Iden-obj',
-  label: '物体识别',
+  id: 'action-handpose',
+  label: '手势识别',
   icon: 'i-heroicons-face-smile',
-  to: '/iden-obj',
+  to: '/action-handpose',
   tooltip: {
-    text: '物体识别',
+    text: '手势识别',
   }
-},{
-  id: 'Audio-SpeechtoText',
-  label: '语音转文本',
-  icon: 'i-heroicons-face-smile',
-  to: '/audio-SpeechtoText',
+}, {
+  id: 'action-bodyaction',
+  label: '全身动作捕捉',
+  icon: 'i-heroicons-sparkles',
+  to: '/action-bodyaction',
   tooltip: {
-    text: '语音转文本',
+    text: '全身动作捕捉',
+  }
+}, {
+  id: 'action-spacepose',
+  label: '面部动作捕捉',
+  icon: 'i-heroicons-magnifying-glass-circle',
+  to: '/action-spacepose',
+  tooltip: {
+    text: '面部动作捕捉',
   }
 }]
 

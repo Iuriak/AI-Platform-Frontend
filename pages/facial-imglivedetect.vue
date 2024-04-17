@@ -2,15 +2,15 @@
 <script setup>
 definePageMeta({
   layout: 'facial',
-  title: 'Facial Effect',
+  title: 'Facial Authentication',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="人脸特效">
+        <UDashboardNavbar title="图片活体检测">
         </UDashboardNavbar>
-        <FacialUploadBoard></FacialUploadBoard>
+        <FacialUploadBoard_imglivedetect></FacialUploadBoard_imglivedetect>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

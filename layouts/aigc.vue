@@ -10,38 +10,47 @@ const links = [
     text: '首页',
   }
 },{
-  id: 'Object-Recognition',
-  label: '图像识别模块',
+  id: 'aigc-tools',
+  label: 'AIGC模块',
   icon: 'i-heroicons-home',
-  to: '/object-detection',
+  to: '/aigc-tools',
   tooltip: {
-    text: '图像识别模块',
+    text: 'AIGC模块',
   }
 }, {
-  id: 'Iden-bg',
-  label: '场景识别',
-  icon: 'i-heroicons-face-smile',
-  to: '/iden-bg',
+  id: 'aigc-dranggan',
+  label: 'DragGan',
+  icon: 'i-heroicons-home',
+  to: '/aigc-dranggan',
   tooltip: {
-    text: '场景识别',
+    text: 'DragGan',
   }
-},{
-  id: 'Iden-obj',
-  label: '物体识别',
-  icon: 'i-heroicons-face-smile',
-  to: '/iden-obj',
+}, {
+  id: 'aigc-Codeformer',
+  label: 'Codeformer',
+  icon: 'i-heroicons-home',
+  to: '/aigc-codeformer',
   tooltip: {
-    text: '物体识别',
+    text: 'Codeformer',
   }
-},{
-  id: 'Audio-SpeechtoText',
-  label: '语音转文本',
-  icon: 'i-heroicons-face-smile',
-  to: '/audio-SpeechtoText',
+}, {
+  id: 'aigc-PowerPaint',
+  label: 'PowerPaint',
+  icon: 'i-heroicons-home',
+  to: '/aigc-powerPaint',
   tooltip: {
-    text: '语音转文本',
+    text: 'PowerPaint',
   }
-}]
+}, {
+  id: 'aigc-InstantID',
+  label: 'InstantID',
+  icon: 'i-heroicons-home',
+  to: '/aigc-instantID',
+  tooltip: {
+    text: 'InstantID',
+  }
+}
+]
 
 </script>
 

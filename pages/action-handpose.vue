@@ -1,16 +1,16 @@
-<!--文件封识别模块-->
+<!--人脸检测与属性分析模块-->
 <script setup>
 definePageMeta({
-  layout: 'identification',
-  title: 'Document Identification',
+  layout: 'action',
+  title: 'action Authentication',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="文件封识别">
+        <UDashboardNavbar title="手势识别">
         </UDashboardNavbar>
-        <FacialUploadBoard></FacialUploadBoard>
+        <ActionHandPose></ActionHandPose>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

@@ -11,37 +11,38 @@ const links = [
   }
 },{
   id: 'Object-Recognition',
-  label: '图像识别模块',
+  label: '目标检测模块',
   icon: 'i-heroicons-home',
-  to: '/object-detection',
+  to: '/obj-recognition',
   tooltip: {
-    text: '图像识别模块',
+    text: '目标检测模块',
+  }
+},{
+  id: 'Object-fire',
+  label: '火灾烟雾检测',
+  icon: 'i-heroicons-face-smile',
+  to: '/object-fire',
+  tooltip: {
+    text: '火灾烟雾检测',
   }
 }, {
-  id: 'Iden-bg',
-  label: '场景识别',
+  id: 'object-smoke',
+  label: '吸烟检测',
   icon: 'i-heroicons-face-smile',
-  to: '/iden-bg',
+  to: '/object-smoke',
   tooltip: {
-    text: '场景识别',
+    text: '吸烟检测',
   }
 },{
-  id: 'Iden-obj',
-  label: '物体识别',
+  id: 'object-mask',
+  label: '口罩佩戴检测',
   icon: 'i-heroicons-face-smile',
-  to: '/iden-obj',
+  to: '/object-mask',
   tooltip: {
-    text: '物体识别',
+    text: '口罩佩戴检测',
   }
-},{
-  id: 'Audio-SpeechtoText',
-  label: '语音转文本',
-  icon: 'i-heroicons-face-smile',
-  to: '/audio-SpeechtoText',
-  tooltip: {
-    text: '语音转文本',
-  }
-}]
+},
+]
 
 </script>
 

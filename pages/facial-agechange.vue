@@ -8,9 +8,9 @@ definePageMeta({
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="人脸检测与属性分析">
+        <UDashboardNavbar title="人脸年龄改变">
         </UDashboardNavbar>
-        <FacialUploadBoard_attr></FacialUploadBoard_attr>
+        <FacialUploadBoard_agechange></FacialUploadBoard_agechange>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

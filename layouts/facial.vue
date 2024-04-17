@@ -26,22 +26,62 @@ const links = [
     text: '人脸验证与检索',
   }
 }, {
-  id: 'Facial-Effect',
-  label: '人脸特效',
+  id: 'Facial-simi',
+  label: '人脸相似性检验',
   icon: 'i-heroicons-sparkles',
-  to: '/facial-effect',
+  to: '/facial-simi',
   tooltip: {
-    text: '人脸特效',
+    text: '人脸相似性检验',
   }
-}, {
-  id: 'Static-Biopsy',
-  label: '静态活体检测',
-  icon: 'i-heroicons-magnifying-glass-circle',
-  to: '/static-biopsy',
+},{
+  id: 'Facial-watersimi',
+  label: '人脸水印照对比',
+  icon: 'i-heroicons-sparkles',
+  to: '/facial-watersimi',
   tooltip: {
-    text: '静态活体检测',
+    text: '人脸水印照对比',
   }
-}, {
+},{
+  id: 'Facial-imglivedetect',
+  label: '图片活体检测',
+  icon: 'i-heroicons-sparkles',
+  to: '/facial-imglivedetect',
+  tooltip: {
+    text: '图片活体检测',
+  }
+},{
+  id: 'Facial-videolivedetect',
+  label: '视频活体检测',
+  icon: 'i-heroicons-sparkles',
+  to: '/facial-videolivedetect',
+  tooltip: {
+    text: '视频活体检测',
+  }
+},{
+  id: 'Facial-agechange',
+  label: '人脸年龄改变',
+  icon: 'i-heroicons-sparkles',
+  to: '/facial-agechange',
+  tooltip: {
+    text: '人脸年龄改变',
+  }
+},{
+  id: 'Facial-genderchange',
+  label: '人脸性别改变',
+  icon: 'i-heroicons-sparkles',
+  to: '/facial-genderchange',
+  tooltip: {
+    text: '人脸性别改变',
+  }
+},{
+  id: 'Facial-cartoonstyle',
+  label: '人脸风格动漫化',
+  icon: 'i-heroicons-sparkles',
+  to: '/facial-cartoonstyle',
+  tooltip: {
+    text: '人脸风格动漫化',
+  }
+},{
   id: 'Detection-Analyse',
   label: '人脸检测与属性分析',
   icon: 'i-heroicons-chart-bar',

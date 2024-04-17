@@ -18,6 +18,14 @@ const links = [
     text: '语音识别模块',
   }
 }, {
+  id: 'Audio-SpeechtoText',
+  label: '语音转文本',
+  icon: 'i-heroicons-face-smile',
+  to: '/audio-SpeechtoText',
+  tooltip: {
+    text: '语音转文本',
+  }
+},{
   id: 'Audio-Speech',
   label: '语音技术',
   icon: 'i-heroicons-face-smile',

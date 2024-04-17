@@ -1,4 +1,4 @@
-<!--人脸检测与属性分析模块-->
+<!--人脸验证与检索模块-->
 <script setup>
 definePageMeta({
   layout: 'facial',
@@ -8,9 +8,9 @@ definePageMeta({
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="人脸检测与属性分析">
+        <UDashboardNavbar title="视频活体检测">
         </UDashboardNavbar>
-        <FacialUploadBoard_attr></FacialUploadBoard_attr>
+        <FacialUploadBoard_videolivedetect></FacialUploadBoard_videolivedetect>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

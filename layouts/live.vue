@@ -10,38 +10,39 @@ const links = [
     text: '首页',
   }
 },{
-  id: 'Object-Recognition',
-  label: '图像识别模块',
+  id: 'live-split',
+  label: '直播工具模块',
   icon: 'i-heroicons-home',
-  to: '/object-detection',
+  to: '/live-tools',
   tooltip: {
-    text: '图像识别模块',
+    text: '直播工具模块',
+  }
+},{
+  id: 'live-split',
+  label: '背景分割',
+  icon: 'i-heroicons-face-smile',
+  to: '/live-split',
+  tooltip: {
+    text: '背景分割',
+  }
+},{
+  id: 'live-bg',
+  label: '虚拟背景',
+  icon: 'i-heroicons-face-smile',
+  to: '/live-bg',
+  tooltip: {
+    text: '虚拟背景',
   }
 }, {
-  id: 'Iden-bg',
-  label: '场景识别',
+  id: 'live-figure',
+  label: '虚拟形象',
   icon: 'i-heroicons-face-smile',
-  to: '/iden-bg',
+  to: '/live-figure',
   tooltip: {
-    text: '场景识别',
+    text: '虚拟形象',
   }
-},{
-  id: 'Iden-obj',
-  label: '物体识别',
-  icon: 'i-heroicons-face-smile',
-  to: '/iden-obj',
-  tooltip: {
-    text: '物体识别',
-  }
-},{
-  id: 'Audio-SpeechtoText',
-  label: '语音转文本',
-  icon: 'i-heroicons-face-smile',
-  to: '/audio-SpeechtoText',
-  tooltip: {
-    text: '语音转文本',
-  }
-}]
+}
+]
 
 </script>
 

@@ -18,9 +18,10 @@
           <div class="bg-white shadow p-4">
             <div v-if="recognitionResults" class="space-y-2">
               <div v-for="(face, index) in recognitionResults" :key="index">
-                <p>Face {{ index}}</p>
-                <p>置信度: {{ face.score }}</p>
-                <p>位置(w,h,x,y): {{ face.w}} {{ face.h}} {{ face.x}} {{ face.y}}</p>
+                <p>物体 {{ index}}</p>
+                <p>名称: {{ face.label }}</p>
+                <p>类别: {{ face.cls }}</p>
+                <p>置信度: {{ face.score}} </p>
               </div>
             </div>
           </div>
@@ -57,9 +58,8 @@ export default {
         formData.append('img_1', file);
         console.log(formData);
         // 发送到后端进行人脸识别（这里需要替换为当前需要用的API endpoint）
-        this.$axios.post('http://0.0.0.0:8080/face/face_isexist', formData)
+        this.$axios.post('http://0.0.0.0:8080/image/img_objectcls', formData)
           .then((response) => {
-            // 假设后端返回的结果格式为 { faces: [{ age: number, gender: string }] }
             console.log(response);
             this.recognitionResults = response.data;
             console.log(this.recognitionResults);

@@ -1,16 +1,16 @@
-<!--静态活体检测模块-->
+<!--人脸检测与属性分析模块-->
 <script setup>
 definePageMeta({
   layout: 'facial',
-  title: 'Static Biopsy',
+  title: 'Facial Authentication',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="静态活体检测">
+        <UDashboardNavbar title="人脸风格动漫化">
         </UDashboardNavbar>
-        <FacialUploadBoard></FacialUploadBoard>
+        <FacialUploadBoard_cartoon></FacialUploadBoard_cartoon>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

@@ -1,16 +1,16 @@
-<!--宠物识别模块-->
+<!--人脸检测与属性分析模块-->
 <script setup>
 definePageMeta({
   layout: 'identification',
-  title: 'Pet Identification',
+  title: 'obj Authentication',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="宠物识别">
+        <UDashboardNavbar title="物体识别">
         </UDashboardNavbar>
-        <FacialUploadBoard></FacialUploadBoard>
+        <ImageObjdetect></ImageObjdetect>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

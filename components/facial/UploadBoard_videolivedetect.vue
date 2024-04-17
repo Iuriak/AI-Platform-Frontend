@@ -5,11 +5,11 @@
         <div class="w-full md:w-1/2">
           <div class="border-dashed border-4 border-gray-200 p-12 flex justify-center items-center">
             <input type="file" class="hidden" @change="uploadImage" ref="fileInput">
-            <button class="px-4 py-2 bg-blue-500 text-white rounded shadow" @click="triggerFileInput">上传图片</button>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded shadow" @click="triggerFileInput">上传视频</button>
           </div>
           <!-- 显示上传的图片 -->
-          <div v-if="imageSrc" class="mt-4">
-            <img :src="imageSrc" class="w-full h-auto" alt="Uploaded image">
+          <div v-if="videoSrc" class="mt-4">
+            <video :src="videoSrc" class="w-full h-auto" controls></video>
           </div>
         </div>
   
@@ -17,11 +17,9 @@
         <div class="w-full md:w-1/2">
           <div class="bg-white shadow p-4">
             <div v-if="recognitionResults" class="space-y-2">
-              <div v-for="(face, index) in recognitionResults" :key="index">
-                <p>Face {{ index}}</p>
-                <p>置信度: {{ face.score }}</p>
-                <p>位置(w,h,x,y): {{ face.w}} {{ face.h}} {{ face.x}} {{ face.y}}</p>
-              </div>
+              <p>评分：{{ recognitionResults.liveness_score }}</p>
+              <p>是否活体：{{ recognitionResults.passed? '是' : '否' }}</p>
+              <!-- <p>位置(w,h,x,y)：{{ recognitionResults.w }}, {{ recognitionResults.h }}, {{ recognitionResults.x }}, {{ recognitionResults.y }}</p> -->
             </div>
           </div>
         </div>
@@ -35,7 +33,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      imageSrc: null, // 照片的URL
+      videoSrc: null, // 照片的URL
       recognitionResults: null, //识别结果(根据每个api的实际情况做修改吧，反正大差不差)
     };
   },
@@ -50,18 +48,17 @@ export default {
       const file = event.target.files[0];
       if (file) {
         // 将图片转换为可显示的URL
-        this.imageSrc = URL.createObjectURL(file);
+        this.videoSrc = URL.createObjectURL(file);
 
         // 创建 FormData 对象以发送到后端
         const formData = new FormData();
-        formData.append('img_1', file);
+        formData.append('video_1', file);
         console.log(formData);
         // 发送到后端进行人脸识别（这里需要替换为当前需要用的API endpoint）
-        this.$axios.post('http://0.0.0.0:8080/face/face_isexist', formData)
+        this.$axios.post('http://0.0.0.0:8080/face/liveisexistVideo', formData)
           .then((response) => {
-            // 假设后端返回的结果格式为 { faces: [{ age: number, gender: string }] }
             console.log(response);
-            this.recognitionResults = response.data;
+            this.recognitionResults = response.data.data;
             console.log(this.recognitionResults);
           })
           .catch((error) => {

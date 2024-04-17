@@ -1,16 +1,16 @@
-<!--商品识别模块-->
+<!--人脸检测与属性分析模块-->
 <script setup>
 definePageMeta({
-  layout: 'identification',
-  title: 'Object Identification',
+  layout: 'action',
+  title: 'action Authentication',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="商品识别">
+        <UDashboardNavbar title="手部动作捕捉">
         </UDashboardNavbar>
-        <FacialUploadBoard></FacialUploadBoard>
+        <ActionHandAction></ActionHandAction>
         </UDashboardPanel>
     </UDashboardPage>
 </template>

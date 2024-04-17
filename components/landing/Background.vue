@@ -5,7 +5,7 @@
         v-for="(block, index) in blocks"
         :key="index"
         :style="blockStyle(block)"
-        class="absolute bg-blue-200 rounded"
+        class="absolute bg-blue-300 rounded"
       ></div>
     </div>
   </template>
@@ -22,7 +22,7 @@
     },
     methods: {
       generateBlocks() {
-        const blockCount = 50; // 你想生成的方块数量
+        const blockCount = 300; // 你想生成的方块数量
         for (let i = 0; i < blockCount; i++) {
           this.blocks.push({
             x: Math.random() * 100, // 横轴位置（视窗宽度的百分比）

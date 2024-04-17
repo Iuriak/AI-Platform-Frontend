@@ -1,16 +1,16 @@
-<!--车辆识别模块-->
+<!--人脸检测与属性分析模块-->
 <script setup>
 definePageMeta({
-  layout: 'identification',
-  title: 'Vehicle Identification',
+  layout: 'action',
+  title: 'action Authentication',
 })
 </script>
 <template>
     <UDashboardPage>
         <UDashboardPanel grow>
-        <UDashboardNavbar title="车辆识别">
+        <UDashboardNavbar title="全身动作捕捉">
         </UDashboardNavbar>
-        <FacialUploadBoard></FacialUploadBoard>
+        <ActionBodyAction></ActionBodyAction>
         </UDashboardPanel>
     </UDashboardPage>
 </template>
