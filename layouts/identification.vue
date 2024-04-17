@@ -10,7 +10,7 @@ const links = [
     text: '首页',
   }
 },{
-  id: 'Facial-Recognition',
+  id: 'Object-Recognition',
   label: '图像识别模块',
   icon: 'i-heroicons-home',
   to: '/object-detection',
