@@ -30,12 +30,12 @@
     </div>
   </template>
   
-  <script>
+<script>
 export default {
   data() {
     return {
-      imageSrc: null,
-      recognitionResults: null,
+      imageSrc: null, // 照片的URL
+      recognitionResults: null, //识别结果(根据每个api的实际情况做修改吧，反正大差不差)
     };
   },
   methods: {
@@ -52,7 +52,7 @@ export default {
         const formData = new FormData();
         formData.append('file', file);
 
-        // 发送到后端进行人脸识别（这里需要替换为你的API endpoint）
+        // 发送到后端进行人脸识别（这里需要替换为当前需要用的API endpoint）
         this.$axios.post('/api/face-recognition', formData)
           .then((response) => {
             // 假设后端返回的结果格式为 { faces: [{ age: number, gender: string }] }
