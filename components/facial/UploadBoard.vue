@@ -30,3 +30,39 @@
     </div>
   </template>
   
+  <script>
+export default {
+  data() {
+    return {
+      imageSrc: null,
+      recognitionResults: null,
+    };
+  },
+  methods: {
+    triggerFileInput() {
+      this.$refs.fileInput.click();
+    },
+    uploadImage(event) {
+      const file = event.target.files[0];
+      if (file) {
+        // 将图片转换为可显示的URL
+        this.imageSrc = URL.createObjectURL(file);
+
+        // 创建 FormData 对象以发送到后端
+        const formData = new FormData();
+        formData.append('file', file);
+
+        // 发送到后端进行人脸识别（这里需要替换为你的API endpoint）
+        this.$axios.post('/api/face-recognition', formData)
+          .then((response) => {
+            // 假设后端返回的结果格式为 { faces: [{ age: number, gender: string }] }
+            this.recognitionResults = response.data;
+          })
+          .catch((error) => {
+            console.error('There was an error!', error);
+          });
+      }
+    }
+  }
+};
+</script>
